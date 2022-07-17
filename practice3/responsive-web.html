@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 1. viewport Meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* Body max-width and margin auto */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            /* 2.CSS relative unit( tex-em,%,vw) */
+            font-size: 10vw;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .container-two {
+            display: flex;
+        }
+
+        .container-two .split {
+
+            width: 50%;
+
+
+        }
+/* make img responsive */
+        .split img {
+            width: 100%;
+
+        }
+
+        /* split screen using felx */
+
+        @media screen and (max-width:576px) {
+            .container-two {
+                flex-direction: column-reverse;
+            }
+
+            .container-two .split {
+
+                width: 100%;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. viewport Meta tag
+    2.CSS relative unit( tex-em,%,vw) 
+    3.Responsive img(flued Img)
+    4.Body max-width and margin auto
+    5.split screen using felx(two columnsection)
+    6. Multi-Column for grid responsive(rseponsive.html)
+    7.Responsive manu(Bootstrap)
+-->
+
+    <section>
+        <h1>Responsive Practice</h1>
+    </section>
+    <!-- <div class="image">
+    <img src="food.jpg" alt="">
+</div> -->
+    <!-- Responsive img(flued Img) -->
+    <div class="image"><img src="tiger2.jpeg" alt=""></div>
+
+    <section>
+        <!-- split screen using felx -->
+        <h2>two parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="food.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="tiger2.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

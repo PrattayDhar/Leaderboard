@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            from {
+                background-color:rebeccapurple; 
+            left: 0px;
+            top: 0px;
+        }
+
+            25%{
+                top:500px ;
+                background-color: black;
+            }
+            50%{
+                top: 0px;
+                background-color: green;
+            }
+            75%{
+                top: 500px;
+                background-color: blue;
+            }
+
+            to {
+                background-color: red;
+                left: 600px;
+                top: 0;
+            }
+        }
+
+        .stage {
+            width: 700px;
+            height: 600px;
+            background-color: aqua;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            border-radius: 50%;
+            position: relative;
+           animation: sliding 4s ease-in-out 0.25s infinite alternate ;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hasan vai best</h1>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

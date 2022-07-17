@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Crimson+Text&family=Merriweather+Sans:wght@300&family=Poppins:ital,wght@0,400;1,500&family=The+Nautigal:wght@700&display=swap');
+
+/* Common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+
+    background-color: #ffffff;
+    width: 870px;
+    padding: 30px;
+}
+.section-titel{
+    color: blue;
+    font-size: 24px;
+}
+/* top-plyers style */
+.plyers{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+/* gap: 10px; */
+}
+.player {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+}
